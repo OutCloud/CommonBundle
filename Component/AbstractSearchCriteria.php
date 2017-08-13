@@ -31,7 +31,16 @@ abstract class AbstractSearchCriteria
     /**
      * @return array
      */
-    abstract public function getCriteria(): array;
+    public function getCriteria(): array
+    {
+        $properties = \array_keys(get_object_vars($this));
+        $properties = \array_diff($properties, ['limit', 'offset', 'orderBy']);
+        foreach ($properties as $property){
+            $this->$property ? $criteria[$property] = $this->$property : null;
+        }
+
+        return $criteria ?? [];
+    }
 
     /**
      * @return int|null

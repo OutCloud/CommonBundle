@@ -9,15 +9,13 @@ abstract class AbstractRepository extends EntityRepository
 {
     /**
      * @param AbstractSearchCriteria $criteria
-     * @return AbstractEntity|null
+     * @return AbstractEntity|null|object
      */
     public function findOne(AbstractSearchCriteria $criteria): ?AbstractEntity
     {
         return $this->findOneBy(
             $criteria->getCriteria(),
-            $criteria->getOrderBy(),
-            $criteria->getLimit(),
-            $criteria->getOffset()
+            $criteria->getOrderBy()
         );
     }
 

@@ -27,7 +27,6 @@
       "OutCloud\\CommonBundle\\" : ""
     }
   },
-  "target-dir" : "Company/DemoBundle",
   "repositories" : [{
     "type" : "vcs",
     "url" : "https://github.com/OutCloud/CommonBundle.git"

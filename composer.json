@@ -17,7 +17,7 @@
     "doctrine/doctrine-bundle": "^1.6",
     "doctrine/orm": "^2.5",
     "jms/serializer-bundle": "^2.0",
-    "symfony/symfony": "3.3.*",
+    "symfony/symfony": "3.3.*"
   },
   "config": {
     "sort-packages": true

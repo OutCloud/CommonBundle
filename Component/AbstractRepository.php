@@ -2,7 +2,7 @@
 
 namespace OutCloud\CommonBundle\Component;
 
-use CommonBundle\Exception\EntityDoesNotExistException;
+use OutCloud\CommonBundle\Exception\EntityDoesNotExistException;
 use Doctrine\ORM\EntityRepository;
 
 abstract class AbstractRepository extends EntityRepository

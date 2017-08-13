@@ -1,6 +1,6 @@
 <?php
 
-namespace OutCloud\CommonBundle\Component;
+namespace OutCloud\CommonBundle\Exception;
 
 /**
  * {@inheritDoc}

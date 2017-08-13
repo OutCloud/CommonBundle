@@ -1,0 +1,41 @@
+{
+  "name" : "outcloud/common-bundle",
+  "description" : "Common bundle for symfony 3",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Grzegorz Lieske",
+    "email" : "grzesiu.lieske@gmail.com"
+  }],
+  "keywords" : [
+    "bundle"
+  ],
+  "license" : [
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "php": "^7.1",
+    "doctrine/doctrine-bundle": "^1.6",
+    "doctrine/orm": "^2.5",
+    "jms/serializer-bundle": "^2.0",
+    "symfony/symfony": "3.3.*",
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload" : {
+    "psr-4" : {
+      "OutCloud\\CommonBundle\\" : ""
+    }
+  },
+  "target-dir" : "Company/DemoBundle",
+  "repositories" : [{
+    "type" : "vcs",
+    "url" : "https://github.com/OutCloud/CommonBundle.git"
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "0.1"
+    }
+  }
+}
